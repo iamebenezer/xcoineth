@@ -83,17 +83,14 @@ track.addEventListener("ended", function () {
   controlBtn.className = "play";
 });
       </script>
-  <video controls autoplay="true" autoplay="true" preload="yes">
-    <source src="/assets/Amazing-SCARY-3D-Holophonic-Soun.mp4" type="video/mp4" autoplay="true">
-  </video> 
- 	<video autoplay controls playsinline id="vid">
+
+ 	<video autoplay controls playsinline id="vid" autoplay>
     <source src="/assets/Amazing-SCARY-3D-Holophonic-Soun.mp4" type="video/mp4"/>
 </video>
 <script>
     document.getElementById('vid').play();
 </script>
-	
- <audio autoplay="true" src="/assets/Amazing SCARY 3D Holophonic Sound (Use headphones).mp3" controls autoplay="true" hidden preload="auto"></audio>
+
 <script>
         AOS.init();
       </script>
