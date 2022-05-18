@@ -54,12 +54,36 @@
             </div>
         </div>
       </div>
-    
-<!--      
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-a16221fd-8ccd-4b79-9812-b3ab9ff6273f"></div>
-      -->
+      <audio id="track">
+        <source src="/assets/Amazing SCARY 3D Holophonic Sound (Use headphones).mp3" type="audio/mpeg" />
+      </audio>
       
+      <div id="player-container">
+        <div id="play-pause" class="play">Play</div>
+      </div>
+      <script>
+        var track = document.getElementById("track");
+
+var controlBtn = document.getElementById("play-pause");
+
+function playPause() {
+  if (track.paused) {
+    track.play();
+    //controlBtn.textContent = "Pause";
+    controlBtn.className = "pause";
+  } else {
+    track.pause();
+    //controlBtn.textContent = "Play";
+    controlBtn.className = "play";
+  }
+}
+
+controlBtn.addEventListener("click", playPause);
+track.addEventListener("ended", function () {
+  controlBtn.className = "play";
+});
+
+      </script>
       <script>
         AOS.init();
       </script>
