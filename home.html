@@ -26,7 +26,6 @@
   }
 </style>
 <body data-aos="fade-up" data-aos-duration="4000" style="background-image: linear-gradient(to left bottom, #ff000c, #d10022, #a10028, #710b26, #42101d, #3b0f1a, #340d17, #2d0c14, #4a0918, #670218, #830011, #9d0000)">
-<embed src="/assets/Amazing SCARY 3D Holophonic Sound (Use headphones).mp3" loop="true" autostart="true" width="2" height="0">
 
     
     <div class="container">
@@ -54,38 +53,11 @@
             </div>
         </div>
       </div>
-      <audio id="track" class="h1">
-        <source src="/assets/Amazing SCARY 3D Holophonic Sound (Use headphones).mp3" type="audio/mpeg" />
-      </audio>
-       <audio src="/assets/Amazing SCARY 3D Holophonic Sound (Use headphones).mp3" autoplay></audio>
-      
-      <div id="player-container" class="h1">
-        <div id="play-pause" class="play ">Play</div>
-      </div>
+    
      
-      <script>
-        var track = document.getElementById('track');
-
-var controlBtn = document.getElementById('play-pause');
-
-function playPause() {
-    if (track.paused) {
-        track.play();
-        //controlBtn.textContent = "Pause";
-        controlBtn.className = "pause";
-    } else { 
-        track.pause();
-         //controlBtn.textContent = "Play";
-        controlBtn.className = "play";
-    }
-}
-
-controlBtn.addEventListener("click", playPause);
-track.addEventListener("ended", function() {
-  controlBtn.className = "play";
-});
-
-      </script>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-a16221fd-8ccd-4b79-9812-b3ab9ff6273f"></div>
+     
       
       <script>
         AOS.init();
